@@ -1,0 +1,174 @@
+/***************************************************/
+/*                    General                     */
+/*************************************************/
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.container {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.sidebar {
+  grid-column: 1 / span 1;
+  padding-top: 3rem;
+  padding-bottom: 20rem;
+  width: 15vw;
+  height: 100vh;
+  grid-row: auto;
+  background-color: rgb(208, 255, 203);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  justify-content: space-around;
+}
+
+.sidebar-before {
+  position: absolute;
+  z-index: 3;
+  grid-column: 1 / span 1;
+  padding-top: 3rem;
+  padding-bottom: 20rem;
+  width: 100vw;
+  height: 100vh;
+  grid-row: auto;
+  background-color: rgb(255, 175, 235);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  justify-content: space-around;
+  transition: all 2.5s ease-in-out;
+}
+
+.sidebar-win {
+  position: absolute;
+  z-index: 3;
+  grid-column: 1 / span 1;
+  padding-top: 3rem;
+  padding-bottom: 20rem;
+  width: 100vw;
+  height: 100vh;
+  grid-row: auto;
+  background-color: rgb(255, 230, 0);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  justify-content: space-around;
+  transition: all 2.5s ease-in-out;
+}
+
+.board {
+  grid-column: 2 / span 7;
+  grid-row: auto;
+  background-color: cyan;
+  width: 85vw;
+  padding: 5rem;
+  display: grid;
+  grid-gap: 1rem;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+}
+
+.card {
+  min-width: 9vw;
+  max-width: 12vw;
+  min-height: 9vw;
+  overflow: hidden;
+  background-color: rgb(228, 228, 228);
+  border-radius: 10px;
+  box-shadow: 3px 3px 7px darkgray;
+  transition: all 0.4s;
+}
+
+.flipped1 {
+  background-color: darkorange;
+  transition: all 0.4s;
+}
+.flipped2 {
+  background-color: darkseagreen;
+  transition: all 0.4s;
+}
+.flipped3 {
+  background-color: darkviolet;
+  transition: all 0.4s;
+}
+.flipped4 {
+  background-color: chartreuse;
+  transition: all 0.4s;
+}
+.flipped5 {
+  background-color: royalblue;
+  transition: all 0.4s;
+}
+.flipped6 {
+  background-color: yellow;
+  transition: all 0.4s;
+}
+.flipped6 {
+  background-color: rgb(0, 0, 0);
+  transition: all 0.4s;
+}
+.flipped6 {
+  background-color: rgb(0, 209, 209);
+  transition: all 0.4s;
+}
+.flipped6 {
+  background-color: rgb(88, 88, 28);
+  transition: all 0.4s;
+}
+.flipped6 {
+  background-color: rgb(255, 0, 0);
+  transition: all 0.4s;
+}
+.flipped6 {
+  background-color: rgb(179, 153, 131);
+  transition: all 0.4s;
+}
+.flipped6 {
+  background-color: rgb(49, 11, 71);
+  transition: all 0.4s;
+}
+.flipped6 {
+  background-color: rgb(0, 187, 162);
+  transition: all 0.4s;
+}
+.flipped6 {
+  background-color: rgb(255, 0, 242);
+  transition: all 0.4s;
+}
+.flipped6 {
+  background-color: rgb(255, 177, 232);
+  transition: all 0.4s;
+}
+
+.win {
+  font-size: 30px;
+  color: fuchsia;
+}
+
+button {
+  width: fit-content;
+  padding: 5px;
+}
+
+.level {
+  opacity: 0;
+}
+.timer-title {
+  opacity: 0;
+}
+.timer {
+  opacity: 0;
+}
